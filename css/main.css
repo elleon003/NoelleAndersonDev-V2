@@ -639,6 +639,17 @@ select {
   font-display: swap;
 }
 
+h1 {
+  font-family: PermanentMarker, ui-serif;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+p, a {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 *, ::before, ::after {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
@@ -686,14 +697,5 @@ select {
 
 .ml-5 {
   margin-left: 1.25rem;
-}
-
-.font-display {
-  font-family: PermanentMarker, ui-serif;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
