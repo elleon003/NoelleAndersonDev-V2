@@ -1,15 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full flex flex-col">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noelle Anderson | Developer</title>
+  <title>Noelle Anderson | Web Developer</title>
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
   <link rel="stylesheet" href="/css/main.css">
   <script src="https://kit.fontawesome.com/e5ee364ee4.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <h1 class="ml-5">Testing Tailwind!</h1>
-  <p class="ml-5"><i class="fad fa-burrito"></i> Testing some more</p>
+<body class="h-full md:h-screen flex flex-col w-full">
+  <header class="w-full bg-dark">
+    <div class="container mx-auto px-4 lg:px-2 xl:px-0">
+      <nav role="navigation" class="w-full flex flex-col lg:flex-row lg:justify-between py-8">
+        <a href="https://noelleanderson.dev"><h1 class="text-light">Noelle Anderson - Web Developer</h1></a>
+        <div id="menu" class="flex flex-wrap justify-start lg:justify-end mt-8 lg:mt-0">
+          <a href="#about"><span class="nav-link pl-0 !ml-0 lg:pl-4 lg:ml-2">About Me</span></a>
+          <a href="#skills"><span class="nav-link">Skills</span></a>
+          <a href="#projects"><span class="nav-link">Projects</span></a>
+          <a href="#contact" class="mt-2 md:mt-0"><span class="ml-2 btn">Let's Talk</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="lg:flex-1 lg:overflow-y-auto">
+
+    <section id="about">
+      <div class="container mx-auto px-8 lg:px-2 xl:px-0">
+        <div class="content h-screen">
+          <h2>About Me</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container mx-auto px-8 lg:px-2 xl:px-0">
+        <div class="content h-screen">
+          <h2>Skills</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container mx-auto px-8 xl:px-0">
+        <div class="content h-screen">
+          <h2>Projects</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container mx-auto px-8 xl:px-0">
+        <div class="content h-screen">
+          <h2>Let's Talk!</h2>
+        </div>
+      </div>
+    </section>
+    
+
+  </main>
+
+  <footer class="mt-auto py-4 w-full bg-grey">
+    <div class="container mx-auto px-8 xl:px-0">
+      <p>&copy;2021 <a href="https://noelleanderson.dev">Noelle Anderson.dev</a></p>
+    </div>
+  </footer>
 </body>
 </html>

@@ -641,13 +641,33 @@ select {
 
 h1 {
   font-family: PermanentMarker, ui-serif;
-  font-size: 3rem;
-  line-height: 1;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-p, a {
-  font-size: 1.125rem;
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+h2 {
+  font-family: PermanentMarker, ui-serif;
+  font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+@media (min-width: 1280px) {
+  h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  p, a {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
 }
 
 *, ::before, ::after {
@@ -695,7 +715,246 @@ p, a {
   --tw-backdrop-sepia:  ;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
+.container {
+  width: 100%;
 }
 
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.nav-link {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-width: 2px;
+  border-color: transparent;
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(241 241 249 / var(--tw-text-opacity));
+  transition-duration: 300ms;
+}
+
+.nav-link:hover {
+  border-radius: 0.125rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(190 161 135 / var(--tw-border-opacity));
+  font-weight: 500;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1024px) {
+  .nav-link {
+    padding: 1rem;
+  }
+}
+
+.btn {
+  border-radius: 0.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 161 135 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-weight: 600;
+  transition-duration: 300ms;
+}
+
+.btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(176 141 109 / var(--tw-bg-opacity));
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    padding: 1rem;
+  }
+}
+
+.content {
+  padding-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .content {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.\!ml-0 {
+  margin-left: 0px !important;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mt-auto {
+  margin-top: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 12 29 / var(--tw-bg-opacity));
+}
+
+.bg-grey {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 127 136 / var(--tw-bg-opacity));
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(241 241 249 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:h-screen {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .lg\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .lg\:flex-1 {
+    flex: 1 1 0%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:justify-end {
+    justify-content: flex-end;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
+  }
+
+  .lg\:overflow-y-auto {
+    overflow-y: auto;
+  }
+
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
