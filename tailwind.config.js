@@ -1,6 +1,12 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
+    screens: {
+      'xs': '396px',
+      ...defaultTheme.screens
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
