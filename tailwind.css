@@ -1,37 +1,35 @@
-@tailwind base;
+@tailwind base; 
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   @font-face {
     font-family: 'PermanentMarker';
+    font-display: swap;
     src: url('/fonts/PermanentMarker-Regular.woff') format('woff');
-    font-display: swap;
   }
   @font-face {
     font-family: 'Montserrat';
+    font-display: swap;
     src: url('/fonts/Montserrat-Light.woff') format('woff');
-    font-style: normal;
-    font-display: swap;
   }
   @font-face {
     font-family: 'Montserrat';
+    font-display: swap;
+    font-style: italic;
     src: url('/fonts/Montserrat-LightItalic.woff') format('woff');
-    font-style: italic;
-    font-display: swap;
   }
   @font-face {
     font-family: 'Montserrat';
+    font-display: swap;
+    font-weight: bold;
     src: url('/fonts/Montserrat-SemiBold.woff') format('woff');
-    font-weight: bold;
-    font-display: swap;
   }
   @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-SemiboldItalic.woff') format('woff');
+    font-display: swap;
     font-weight: bold;
     font-style: italic;
-    font-display: swap;
+    src: url('/fonts/Montserrat-SemiBoldItalic.woff') format('woff');
   }
 }
-
