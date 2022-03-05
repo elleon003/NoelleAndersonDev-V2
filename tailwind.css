@@ -32,4 +32,29 @@
     font-style: italic;
     src: url('/fonts/Montserrat-SemiBoldItalic.woff') format('woff');
   }
+  h1 {
+    @apply text-2xl md:text-3xl xl:text-4xl font-display;
+  }
+  h2 {
+    @apply text-xl md:text-2xl xl:text-3xl font-display;
+  }
+  p,
+  a {
+    @apply text-lg;
+  }
+}
+
+@layer components {
+  .active-link {
+    @apply border-2 border-gold-500 font-medium underline rounded-sm;
+  }
+  .nav-link {
+    @apply text-light p-2 lg:p-4 mx-2 border-2 border-transparent hover:active-link hover:ease-in-out duration-300;
+  }
+  .btn {
+    @apply font-semibold p-2 lg:p-4  bg-gold-500 hover:bg-gold-700 hover:underline hover:ease-in-out duration-300 rounded-sm;
+  }
+  .content {
+    @apply pt-12 lg:px-20;
+  }
 }
